@@ -8,12 +8,15 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=3000M
 dirnum=$SLURM_ARRAY_TASK_ID
+module load R
 
-#         0           1            2         3          4           5            6         7         8            9
-dirarray=(chsev.fear  chsev.happy  dep.fear  dep.happy  eptot.fear  eptot.happy  gad.fear  gad.happy socanx.fear  socanx.happy)
+dirarray=($(cat "$1"))
 
 thisdir=${dirarray[$dirnum]}
 
+echo "Dir list is ${#dirarray[@]} elements long"
+echo "Choosing number ${dirnum}"
+echo "Changing directory to '${thisdir}'"
 cd $thisdir
 npoint
 exit

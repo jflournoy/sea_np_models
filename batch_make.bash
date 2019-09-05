@@ -7,13 +7,18 @@
 #SBATCH --mail-type=END,FAIL
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=1000M
-dirnum=$SLURM_ARRAY_TASK_ID
 
-#         0           1            2         3          4           5            6         7         8            9
-dirarray=(chsev.fear  chsev.happy  dep.fear  dep.happy  eptot.fear  eptot.happy  gad.fear  gad.happy socanx.fear  socanx.happy)
+dirnum=$SLURM_ARRAY_TASK_ID
+module load R
+
+dirarray=($(cat "$1"))
 
 thisdir=${dirarray[$dirnum]}
 
-cd $thisdir/$thisdir
-make clean
+echo "Dir list is ${#dirarray[@]} elements long"
+echo "Choosing number ${dirnum}"
+echo "Changing directory to '${thisdir}'"
+cd $thisdir
+echo "Running 'make'"
+make
 exit
