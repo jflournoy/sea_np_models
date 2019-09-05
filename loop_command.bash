@@ -1,7 +1,7 @@
 #!/bin/bash
 acmd="$*"
 
-dirarray=($(find `pwd -P` -maxdepth 2 -regex ".*\(fear\|happy\)/\(dep\|gad\|socanx\)\(_lead\)*\.\(fear\|happy\)"|sort))
+dirarray=($(find `pwd -P` -maxdepth 2 -regex '.*\(fear\|happy\)/\(panas\|chavg\)\(pos\|neg\)*\(_lead\)*\.\(fear\|happy\)'|sort))
 
 if [ -z "$dirarray" ]
 then
