@@ -4,6 +4,8 @@
 #example for df=28 p<.005 k>451 using NN=3
 #create_cluster_mask.bash 28 .005 3 451 path/to/file.nii.gz 
 
+module load afni/18.3.05-fasrc01
+
 fullfile=$5
 filename=`basename $5`
 fnoext=${filename%.nii.gz}
@@ -50,4 +52,4 @@ echo "Creating cluster map with p<$2, NN=$3, k>$4"
 echo "Using: $nullcrct"
 echo "Cluster map: "$filedir"/"$fnoext".clstmap.df"$df".nii.gz"
 echo "Cluster report: "$filedir"/"$fnoext".clstmap.df"$df".report"
-3dClusterize -inset $nullcrct -ithr 0 -idat 0 -bisided p=$2 -NN $3 -clust_nvox $4 -pref_map "$filedir"/"$fnoext".clstmap.df"$df".nii.gz > "$filedir"/"$fnoext".clstmap.df"$df".report
+3dClusterize -mask "$filedir"/../mask.nii.gz -inset $nullcrct -ithr 0 -idat 0 -bisided p=$2 -NN $3 -clust_nvox $4 -pref_map "$filedir"/"$fnoext".clstmap.df"$df".nii.gz > "$filedir"/"$fnoext".clstmap.df"$df".report

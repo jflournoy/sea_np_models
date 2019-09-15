@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=npoint
-#SBATCH --output=/users/jflournoy/sea_npoint/make_%A_%a.out
-#SBATCH --error=/users/jflournoy/sea_npoint/make_%A_%a.err
+#SBATCH --output=/users/jflournoy/sea_npoint/makecl_%A_%a.out
+#SBATCH --error=/users/jflournoy/sea_npoint/makecl_%A_%a.err
 #SBATCH --time=2:00:00
 #SBATCH --partition=ncf_holy
 #SBATCH --mail-type=END,FAIL

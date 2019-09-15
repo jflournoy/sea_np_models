@@ -1,5 +1,5 @@
 # ##
-# load('../dep.fear/dep.fear/debug.Rdata')
+# load('dep.fear.old/debug.Rdata')
 # attach(designmat)
 # v <- 1e5
 # ##
@@ -106,7 +106,7 @@ processVoxel <- function(v) {
     names(reg_retvals_sw) <- paste0(rep(model_terms_sw, length(name_col_correspondence_sw)), 
                                     rep(names(name_col_correspondence_sw), each = length(model_terms_sw)))
   }
-  retvals <- as.list(c(reg_retvals, std_reg_retvals, reg_retvals_sw))
-  retvals$resids <- reg_resids
+  names(reg_resids) <- sprintf('r%d_%02d', idnum, time)
+  retvals <- c(reg_retvals, std_reg_retvals, reg_retvals_sw, reg_resids)
   return(retvals)
 }
