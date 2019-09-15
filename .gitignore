@@ -17,3 +17,5 @@ runme.*
 *.rda
 Makefile
 slurmjob.bash
+*.sdat
+*.niml
