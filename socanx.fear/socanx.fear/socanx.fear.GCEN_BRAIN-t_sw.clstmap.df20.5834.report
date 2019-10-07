@@ -1,0 +1,23 @@
+#
+#  Cluster report 
+#[ Dataset prefix      = socanx.fear.GCEN_BRAIN-t_sw.nullcrrct.nii.gz ]
+#[ Threshold vol       = [0] ]
+#[ Supplement dat vol  = [0] ]
+#[ Option summary      = -bisided,p=.005,clust_nvox,451,NN3 ]
+#[ Threshold value(s)  = left-tail p=0.005000 -> stat=-3.142549;  right-tail p=0.005000 -> stat=3.142549 ]
+#[ Aux. stat. info.    = DEGREES-of-FREEDOM : 20.5834  ]
+#[ Nvoxel threshold    = 451;  Volume threshold = 3608.000 ]
+#[ Single voxel volume = 8.000 (microliters) ]
+#[ Neighbor type, NN   = 3 ]
+#[ Voxel datum type    = float ]
+#[ Voxel dimensions    = 2.000 mm X 2.000 mm X 2.000 mm ]
+#[ Coordinates Order   = RAI ]
+# Mean and SEM based on absolute value of voxel intensities ]
+#
+#Volume  CM RL  CM AP  CM IS  minRL  maxRL  minAP  maxAP  minIS  maxIS    Mean     SEM    Max Int  MI RL  MI AP  MI IS
+#------  -----  -----  -----  -----  -----  -----  -----  -----  -----  -------  -------  -------  -----  -----  -----
+   1034  -44.7   35.3  -25.7  -64.0  -20.0  -12.0   70.0  -48.0   -4.0   3.8518   0.0206   8.1692  -40.0   58.0  -18.0 
+    740   27.0   31.8   65.0    4.0   50.0   12.0   52.0   56.0   78.0   3.8765   0.0258   7.4353   14.0   24.0   72.0 
+    575  -33.9   33.0   62.9  -46.0  -20.0   12.0   52.0   54.0   72.0   3.9052   0.0264   6.9841  -30.0   22.0   66.0 
+#------  -----  -----  -----  -----  -----  -----  -----  -----  -----  -------  -------  -------  -----  -----  -----
+#  2349  -19.4   33.6   24.7                                             3.8727   0.0138                             
