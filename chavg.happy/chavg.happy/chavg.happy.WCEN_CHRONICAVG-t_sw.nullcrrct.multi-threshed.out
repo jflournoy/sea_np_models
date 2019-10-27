@@ -1,0 +1,6 @@
+++ 3dMultiThresh: AFNI version=AFNI_18.3.05 (Nov 19 2018) [64-bit]
+++ -mthresh dataset parameters
+ +      clustering NN=2  thresholding=2-sided  5 thresholds  1 hpows
+++ threshold default index set to 0
+++ MultiThresh cluster FOM local threshold method = cdf 90.0%
+0
