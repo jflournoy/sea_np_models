@@ -19,3 +19,7 @@ Makefile
 slurmjob.bash
 *.sdat
 *.niml
+*.spec
+*.scene
+*.png
+*.gii
