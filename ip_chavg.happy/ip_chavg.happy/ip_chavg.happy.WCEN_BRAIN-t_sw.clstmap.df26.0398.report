@@ -1,0 +1,23 @@
+#
+#  Cluster report 
+#[ Dataset prefix      = ip_chavg.happy.WCEN_BRAIN-t_sw.nullcrrct.nii.gz ]
+#[ Threshold vol       = [0] ]
+#[ Supplement dat vol  = [0] ]
+#[ Option summary      = -bisided,p=.005,clust_nvox,451,NN3 ]
+#[ Threshold value(s)  = left-tail p=0.005000 -> stat=-3.066479;  right-tail p=0.005000 -> stat=3.066479 ]
+#[ Aux. stat. info.    = DEGREES-of-FREEDOM : 26.0398  ]
+#[ Nvoxel threshold    = 451;  Volume threshold = 3608.000 ]
+#[ Single voxel volume = 8.000 (microliters) ]
+#[ Neighbor type, NN   = 3 ]
+#[ Voxel datum type    = float ]
+#[ Voxel dimensions    = 2.000 mm X 2.000 mm X 2.000 mm ]
+#[ Coordinates Order   = RAI ]
+#[ Mask                = ip_chavg.happy/ip_chavg.happy/../mask.nii.gz ]
+# Mean and SEM based on absolute value of voxel intensities ]
+#
+#Volume  CM RL  CM AP  CM IS  minRL  maxRL  minAP  maxAP  minIS  maxIS    Mean     SEM    Max Int  MI RL  MI AP  MI IS
+#------  -----  -----  -----  -----  -----  -----  -----  -----  -----  -------  -------  -------  -----  -----  -----
+    622  -42.8   61.9  -44.4  -54.0  -32.0   44.0   78.0  -56.0  -30.0   3.9196   0.0248    5.565  -42.0   58.0  -46.0 
+    530    4.4   86.0  -19.6  -22.0   34.0   74.0   96.0  -34.0   -6.0   3.7578   0.0273   6.2514   -2.0   84.0  -16.0 
+#------  -----  -----  -----  -----  -----  -----  -----  -----  -----  -------  -------  -------  -----  -----  -----
+#  1152  -21.6   72.7  -33.2                                             3.8452   0.0185                             

@@ -1,7 +1,7 @@
 #!/bin/bash
 acmd="$*"
 
-dirarray=($(cat s3_dirlist.txt))
+dirarray=($(cat dirlist.txt))
 
 if [ -z "$dirarray" ]
 then

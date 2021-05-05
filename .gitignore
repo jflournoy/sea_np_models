@@ -24,3 +24,7 @@ slurmjob.bash
 *.png
 *.gii
 bin/*
+.Rproj.user
+*.log
+*.tar
+*.tar.gz

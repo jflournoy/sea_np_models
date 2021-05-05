@@ -2,8 +2,8 @@
 
 #Slurm submission options
 #LOOK AT THESE AND EDIT TO OVERRIDE FOR YOUR JOB
-#SBATCH --mem 1000
-#SBATCH --cpus-per-task 1
+#SBATCH --mem 5000
+#SBATCH --cpus-per-task 10
 #SBATCH --nodes 1
 #SBATCH --ntasks 1
 #SBATCH --time 0-24:00

@@ -3,4 +3,6 @@
  +      clustering NN=2  thresholding=2-sided  5 thresholds  1 hpows
 ++ threshold default index set to 0
 ++ MultiThresh cluster FOM local threshold method = cdf 90.0%
-0
+++ Output dataset /users/jflournoy/NewNeuropoint/chsev.fear/chsev.fear/chsev.fear.GCEN_CHRONICSEV-t_sw.nullcrrct.multi-threshed.nii.gz
+++ Output dataset /users/jflournoy/NewNeuropoint/chsev.fear/chsev.fear/chsev.fear.GCEN_CHRONICSEV-t_sw.nullcrrct.multi-threshed.all-mask.nii.gz
+496
